@@ -18,7 +18,7 @@ body {
 
 /*----header------*/
 .banner {
-  background-image: url("/teaCosy/images/banner.webp");
+  background-image: url("/images/banner.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -65,4 +65,38 @@ a {
   height: 3.12rem;
   width: auto;
   display: block;
+}
+/*------main------*/
+#featured {
+  width: 62.5rem;
+  margin: auto;
+  text-align: center;
+}
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.image img {
+  width: 18.75rem;
+  height: auto;
+}
+
+/*---------locations------*/
+#locations {
+  background-image: url("/images/locations-background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;
+  width: 75rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.location-town {
+  display: flex;
+  justify-content: space-between;
 }
