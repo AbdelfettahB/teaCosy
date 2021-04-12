@@ -15,37 +15,18 @@ body {
   background-color: black;
   opacity: 0.9;
 }
-
-/*----header------*/
-.banner {
-  background-image: url("/images/banner.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 75rem;
-  height: 43.75rem;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner h2,
-.banner h4 {
-  margin: 0.625rem;
-}
-#banner-center {
-  width: 100%;
-  background-color: black;
-  opacity: 0.9;
-}
+/*------nav------------*/
 nav {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid seashell;
   height: 4.31rem;
   overflow: hidden;
-  //position: fixed;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
 }
 nav ul {
   list-style: none;
@@ -66,6 +47,30 @@ a {
   width: auto;
   display: block;
 }
+/*----header------*/
+header {
+  background-image: url("/images/banner.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 75rem;
+  height: 43.75rem;
+  margin: 68px auto auto auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner h2,
+.banner h4 {
+  margin: 0.625rem;
+}
+.banner {
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+
 /*------main------*/
 #featured {
   width: 62.5rem;
@@ -77,6 +82,16 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media only screen and (max-width: 800px) {
+  .image {
+    flex: 100%;
+  }
+  #gallery {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .image img {
   width: 18.75rem;
   height: auto;
@@ -91,12 +106,40 @@ a {
   height: 31.25rem;
   width: 75rem;
   margin: auto;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column;*/
+  padding: 3.5% 0;
+}
+.location-title {
+  text-align: center;
 }
 .location-town {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.location-address {
+  background-color: black;
+  flex-basis: 18.75rem;
+  text-align: center;
+  padding: 0.8rem;
+  opacity: 1;
+}
+.location-address p {
+  line-height: 3rem;
+}
+#featured,
+#locations {
+  margin-top: 6rem;
+}
+/*---------contacts------*/
+#contact {
+  text-align: center;
+}
+
+/*---------footer------*/
+footer #copy-right {
+  margin-left: 1.25rem;
+  font-size: 1rem;
 }
